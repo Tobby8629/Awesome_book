@@ -55,7 +55,7 @@
 <details>
 <summary>Functionality</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">Javascript</a></li>
+    <li><a href="https://www.postgresql.org/">Javascript_ES6</a></li>
   </ul>
 </details>
 
