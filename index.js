@@ -24,3 +24,15 @@ form.addEventListener('submit', (e)=>{
 
 })
 
+window.addEventListener('load', ()=>{
+    const reload = JSON.parse(localStorage.getItem('array'));
+    booklist.toReload(reload.lists,all);
+
+    const del = document.querySelectorAll('.remove');
+    del.forEach((del)=>{
+        del.addEventListener('click',()=>{
+            remove(booklist,del);
+        })
+    })
+
+})
