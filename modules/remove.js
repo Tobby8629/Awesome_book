@@ -1,6 +1,6 @@
-
-export const remove = (arry,re) => {
-    arry.delbook(re.dataset.id);
-    localStorage.setItem('array', JSON.stringify(arry));
-     re.parentNode.remove();
-}
+const remove = (arry, re) => {
+  arry.delbook(parseInt(re.dataset.id, 10));
+  localStorage.setItem('array', JSON.stringify(arry));
+  re.parentNode.remove();
+};
+export default remove;
