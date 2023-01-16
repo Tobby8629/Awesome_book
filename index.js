@@ -1,5 +1,6 @@
 import BookList from "./modules/Booklist.js";
 import { remove } from "./modules/remove.js";
+import { links } from "./modules/links.js";
 
 const all = document.querySelector('.all');
 const form = document.querySelector('#form');
@@ -26,7 +27,8 @@ form.addEventListener('submit', (e)=>{
 
 window.addEventListener('load', ()=>{
     const reload = JSON.parse(localStorage.getItem('array'));
-    booklist.toReload(reload.lists,all);
+    console.log(reload)
+    booklist.toReload(reload,all);
 
     const del = document.querySelectorAll('.remove');
     del.forEach((del)=>{
@@ -36,3 +38,7 @@ window.addEventListener('load', ()=>{
     })
 
 })
+
+links();
+
+  

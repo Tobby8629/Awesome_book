@@ -1,4 +1,4 @@
-export let clone = (main, array) => {
+export const clone = (main, array) => {
     const text = `
       <p> "${array.title}" by ${array.author}</p>
       <button class="remove" data-id = ${array.id}>remove</button>
