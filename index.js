@@ -14,6 +14,9 @@ const booklist = new BookList();
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   // Add to list of book display
+  if (autho.value === "" || titl.value === "") {
+    return;
+  }
   all.innerHTML = '';
   booklist.Addbook(autho.value, titl.value, all);
 
