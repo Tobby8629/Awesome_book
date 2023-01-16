@@ -1,11 +1,14 @@
 import BookList from "./modules/Booklist.js";
 import { remove } from "./modules/remove.js";
 import { links } from "./modules/links.js";
+import { date } from "./modules/time.js";
+
 
 const all = document.querySelector('.all');
 const form = document.querySelector('#form');
 const titl = document.querySelector('#title');
 const autho = document.querySelector('#author');
+const time = document.querySelector('#time');
 
 const booklist = new BookList;
 
@@ -27,7 +30,6 @@ form.addEventListener('submit', (e)=>{
 
 window.addEventListener('load', ()=>{
     const reload = JSON.parse(localStorage.getItem('array'));
-    console.log(reload)
     booklist.toReload(reload,all);
 
     const del = document.querySelectorAll('.remove');
@@ -40,5 +42,6 @@ window.addEventListener('load', ()=>{
 })
 
 links();
+date(time);
 
   

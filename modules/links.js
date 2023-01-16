@@ -6,6 +6,9 @@ const li = document.querySelector('#top');
 const add = document.querySelector('#add');
 const contac = document.querySelector('#contac');
 
+
+
+
 list.addEventListener('click', () => {
     hide(li, add, contact);
   });
@@ -17,4 +20,7 @@ list.addEventListener('click', () => {
   contac.addEventListener('click', () => {
     hide(contact, add, li);
   });
+  
 }
+
+
